@@ -1,4 +1,4 @@
-#include <cmath>
+#include <cstdlib>
 
 #include "catch.hpp"
 #include "division.hpp"
