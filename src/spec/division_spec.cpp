@@ -3,7 +3,7 @@
 #include "catch.hpp"
 #include "division.hpp"
 
-SCENARIO("division", "[division]") {
+SCENARIO("divide", "[division]") {
     GIVEN("a positive dividend") {
         int dividend = 7;
 
@@ -87,4 +87,12 @@ SCENARIO("division", "[division]") {
             }
         }
     }
+}
+
+SCENARIO("naive_gcd", "[division]") {
+    REQUIRE(naive_gcd(9, 6) == 3);
+}
+
+SCENARIO("gcd", "[division]") {
+    REQUIRE(gcd(9, 6) == 3);
 }
